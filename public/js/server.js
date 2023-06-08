@@ -10,10 +10,10 @@ const HOST = '0.0.0.0';
 const app = express();
 
 //set current folder
-app.use(express.static(__dirname + "/public"));
+// app.use(express.static(__dirname + "/public"));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile("/index.html");
 });
 
 app.get("/add", (req, res) => {
