@@ -1,9 +1,0 @@
-FROM node:18
-
-WORKDIR /dist
-
-COPY /src/. /dist
-
-RUN npm install
-
-CMD ["npm", "start"]
