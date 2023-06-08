@@ -8,9 +8,6 @@ async function addAmountToDatabase() {
     const soccerPlayer = new Parse.Object('SoccerPlayer');
     //Define its attributes
     soccerPlayer.set('playerName', 'A. Wed');
-    soccerPlayer.set('yearOfBirth', 1997);
-    soccerPlayer.set('emailContact', 'a.wed@email.io');
-    soccerPlayer.set('attributes', ['fast', 'good conditioning']);
     try {
         //Save the Object
         const result = await soccerPlayer.save();
@@ -19,3 +16,4 @@ async function addAmountToDatabase() {
         alert('Failed to create new object: ' + error.message);
     }
 }
+module.exports = addAmountToDatabase;
