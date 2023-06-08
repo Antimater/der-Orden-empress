@@ -13,7 +13,7 @@ const app = express();
 app.use(express.static(__dirname + "/public"));
 
 app.get('/', (req, res) => {
-    res.sendFile("public/index.html");
+    res.sendFile("public/index.html", { root: __dirname });
 });
 
 app.get("/add", (req, res) => {
