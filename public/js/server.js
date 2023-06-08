@@ -8,6 +8,10 @@ const HOST = '0.0.0.0';
 
 // App
 const app = express();
+
+//set current folder
+app.use(express.static(__dirname + "/public"));
+
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
