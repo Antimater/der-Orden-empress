@@ -1,0 +1,22 @@
+div#main {
+  border: 2px solid;
+}
+button,
+div#imgDiv,
+div#divPassword,
+div#divProduct {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+input#inputPassword {
+  margin: 15px;
+}
+img#title {
+  width: 200px;
+  height: auto;
+}
+input#inputMenge {
+  display: flex;
+  justify-content: center;
+}
