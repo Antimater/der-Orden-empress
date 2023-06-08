@@ -12,9 +12,11 @@ const app = express();
 //set current folder
 // app.use(express.static(__dirname + "/public"));
 
-app.get('/', (req, res) => {
-    res.sendFile("/index.html");
-});
+app.use(express.static("public"));
+
+// app.get('/', (req, res) => {
+//     res.sendFile("/public/index.html");
+// });
 
 app.get("/add", (req, res) => {
     res.send("Add Data");
