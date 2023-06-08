@@ -1,5 +1,5 @@
 'use strict';
-
+const path = require('path');
 const express = require('express');
 
 // Constants
@@ -9,7 +9,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-    res.sendFile('../index.html');
+    res.sendFile(path.join(__dirname + 'index.html'));
 });
 
 app.get("/add", (req, res) => {
