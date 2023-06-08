@@ -10,7 +10,6 @@ const HOST = '0.0.0.0';
 const app = express();
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
-    console.log(__dirname);
 });
 
 app.get("/add", (req, res) => {
